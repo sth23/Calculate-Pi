@@ -29,7 +29,7 @@ num_terms = int(input('I will estimate pi. How many terms should I use? '))
 decimals = int(input('How many decimal places should I use in the result? '))
 
 # Create list with desired number of terms to calculate pi
-terms_list = [((-1)**(x-1))/(2*x-1) for x in range(1,num_terms)]
+terms_list = [((-1)**(x))/(2*x+1) for x in range(0,num_terms)]
 
 # Calculate pi to desired number of decimal places
 approx_pi = round(4*sum(terms_list),decimals)
