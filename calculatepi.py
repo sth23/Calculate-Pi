@@ -32,7 +32,7 @@ decimals = int(input('How many decimal places should I use in the result?'))
 terms_list = [((-1)**(x-1))/(2*x-1) for x in range(1,num_terms)]
 
 # Calculate pi to desired number of decimal places
-approx_pi = round(4*sum(terms_list),decimals+1)
+approx_pi = round(4*sum(terms_list),decimals)
 
 # Print output
 print('The approximate value of pi is ' + str(approx_pi))
