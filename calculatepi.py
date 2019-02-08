@@ -25,8 +25,8 @@ Note: remember that the printed value of pi will be an estimate!
 import math
 
 # Prompt user for number of terms to use and number of decimals to display
-num_terms = int(input('I will estimate pi. How many terms should I use?'))
-decimals = int(input('How many decimal places should I use in the result?'))
+num_terms = int(input('I will estimate pi. How many terms should I use? '))
+decimals = int(input('How many decimal places should I use in the result? '))
 
 # Create list with desired number of terms to calculate pi
 terms_list = [((-1)**(x-1))/(2*x-1) for x in range(1,num_terms)]
